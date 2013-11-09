@@ -95,7 +95,7 @@ class Environment():
             if p1.charge != 0 and p2.charge != 0:
                 
                 if p1.charge > p2.charge and p1.mass >= p2.mass:
-                    (p1.angle, p1.speed) = addVectors((p1.angle, (p1.speed*p1.mass)/total_mass), (p1.angle, (p2.speed*p2.mass)/total_mass))
+                    (p2.angle, p2.speed) = addVectors((p1.angle, (p1.speed*p1.mass)/total_mass), (p1.angle, (p2.speed*p2.mass)/total_mass))
 
                 elif p1.charge > p2.charge and p1.mass < p2.mass:
                     (p1.angle, p1.speed) = addVectors((p2.angle, (p1.speed*p1.mass)/total_mass), (p2.angle, (p2.speed*p2.mass)/total_mass))
