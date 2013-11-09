@@ -184,8 +184,8 @@ def main():
 
     # Set up environment
     cvidinfo = pygame.display.Info()
-    cenv = Environment(cvidinfo.current_w, cvidinfo.current_h, 274.15, 0.987, screen, 1000.00) # Pluto 33.15K
-    cenv.total_atoms = 390 # 390 and up getting lag - try on better graphics card
+    cenv = Environment(cvidinfo.current_w, cvidinfo.current_h, 33.15, 0.987, screen, 1000.00) # Pluto 33.15K
+    cenv.total_atoms = 250 # 250 and up getting lag - try on better graphics card
     my_atoms = []
 
     for n in range(cenv.total_atoms):
